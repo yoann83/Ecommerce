@@ -1,0 +1,17 @@
+{
+  "name": "projet_ecommerce",
+  "version": "1.0.0",
+  "description": "Projet E-commerce en NodeJs",
+  "main": "index.js",
+  "scripts": {
+  "start": "browser-refresh index",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
+  "author": "MARTINEZ",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4"
+  }
+}
