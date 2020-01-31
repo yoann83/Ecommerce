@@ -1,0 +1,397 @@
+extends ../layout
+block content
+    #content
+        html
+            body
+                .col-12.col-md-8.col-lg-9
+                    // Slider
+                    .flickity-page-dots-inner.mb-9.flickity-enabled.is-draggable(data-flickity='{"pageDots": true}' tabindex="0")
+                        // Item
+                        // Item
+                        // Item
+                        .flickity-viewport(style="height: 402.344px; touch-action: pan-y;")
+                            .flickity-slider(style="left: 0px; transform: translateX(-300%);")
+                                .w-100.is-selected(style="position: absolute; left: 300%;")
+                                    .card.bg-h-100.bg-left(style="background-image: url(assets/img/covers/cover-24.jpg);")
+                                        .row(style="min-height: 400px;")
+                                            .col-12.col-md-10.col-lg-8.col-xl-6.align-self-center
+                                                .card-body.px-md-10.py-11
+                                                    // Heading
+                                                    h4
+                                                        | 2019 Summer Collection
+                                                    // Button
+                                                    a.btn.btn-link.px-0.text-body(href="shop.html")
+                                                        | View Collection
+                                                        i.fe.fe-arrow-right.ml-2
+                                            .col-12.col-md-2.col-lg-4.col-xl-6.d-none.d-md-block.bg-cover(style="background-image: url(assets/img/covers/cover-16.jpg);")
+                                .w-100(aria-hidden="true" style="position: absolute; left: 100%;")
+                                    .card.bg-cover(style="background-image: url(assets/img/covers/cover-29.jpg)")
+                                        .row.align-items-center(style="min-height: 400px;")
+                                            .col-12.col-md-10.col-lg-8.col-xl-6
+                                                .card-body.px-md-10.py-11
+                                                    // Heading
+                                                    h4.mb-5 Get -50% from Summer Collection
+                                                    // Text
+                                                    p.mb-7
+                                                        | Appear, dry there darkness they're seas.
+                                                        br
+                                                        strong.text-primary Use code 4GF5SD
+                                                    // Button
+                                                    a.btn.btn-outline-dark(href="shop.html")
+                                                        | Shop Now
+                                                        i.fe.fe-arrow-right.ml-2
+                                .w-100(aria-hidden="true" style="position: absolute; left: 200%;")
+                                    .card.bg-cover(style="background-image: url(assets/img/covers/cover-30.jpg);")
+                                        .row.align-items-center(style="min-height: 400px;")
+                                            .col-12
+                                                .card-body.px-md-10.py-11.text-center.text-white
+                                                    // Preheading
+                                                    p.text-uppercase Enjoy an extra
+                                                    // Heading
+                                                    h1.display-4.text-uppercase 50% off
+                                                    // Link
+                                                    a.link-underline.text-reset(href="shop.html") Shop Collection
+                        ol.flickity-page-dots
+                            li.dot.is-selected(aria-label="Page dot 1" aria-current="step")
+                            li.dot(aria-label="Page dot 2")
+                            li.dot(aria-label="Page dot 3")
+                    // Header
+                    .row.align-items-center.mb-7
+                        .col-12.col-md
+                            // Heading
+                            h3.mb-1 Womens' Clothing
+                            // Breadcrumb
+                            ol.breadcrumb.mb-md-0.font-size-xs.text-gray-400
+                                li.breadcrumb-item
+                                    a.text-gray-400(href="index.html") Home
+                                li.breadcrumb-item.active
+                                    | Women's Clothing
+                        .col-12.col-md-auto
+                            // Select
+                            select.custom-select.custom-select-xs
+                                option(selected="") Most popular
+                    // Tags
+                    .row.mb-7
+                        .col-12
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | Shift dresses
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | Summer
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | M
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | White
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | Red
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | Adidas
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | $10.00 - $49.00
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                            span.btn.btn-xs.btn-light.font-weight-normal.text-muted.mr-3.mb-3
+                                | $50.00 - $99.00
+                                a.text-reset.ml-2(href="#!" role="button")
+                                    i.fe.fe-x
+                    // Products
+                    .row
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Badge
+                                .badge.badge-white.card-badge.card-badge-left.text-uppercase
+                                    | New
+                                // Image
+                                .card-img
+                                    // Image
+                                    a.card-img-hover(href="product.html")
+                                        img.card-img-top.card-img-back(src="assets/img/products/product-120.jpg" alt="...")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-5.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Shoes
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Leather mid-heel Sandals
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $129.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Image
+                                .card-img
+                                    // Image
+                                    a.card-img-hover(href="product.html")
+                                        img.card-img-top.card-img-back(src="assets/img/products/product-121.jpg" alt="...")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-6.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Dresses
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Cotton floral print Dress
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $40.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Badge
+                                .badge.badge-dark.card-badge.card-badge-left.text-uppercase
+                                    | Sale
+                                // Image
+                                .card-img
+                                    // Image
+                                    a.card-img-hover(href="product.html")
+                                        img.card-img-top.card-img-back(src="assets/img/products/product-122.jpg" alt="...")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-7.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Shoes
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Leather Sneakers
+                                    // Price
+                                    .font-weight-bold
+                                        span.font-size-xs.text-gray-350.text-decoration-line-through $85.00
+                                        span.text-primary $85.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Image
+                                .card-img
+                                    // Image
+                                    a(href="#!")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-8.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Tops
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Cropped cotton Top
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $29.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Image
+                                .card-img
+                                    // Image
+                                    a(href="#!")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-9.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Dresses
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Floral print midi Dress
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $50.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Badge
+                                .badge.badge-dark.card-badge.card-badge-left.text-uppercase
+                                    | Sale
+                                // Image
+                                .card-img
+                                    // Image
+                                    a.card-img-hover(href="product.html")
+                                        img.card-img-top.card-img-back(src="assets/img/products/product-123.jpg" alt="...")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-10.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Bags
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Suede cross body Bag
+                                    // Price
+                                    .font-weight-bold
+                                        span.font-size-xs.text-gray-350.text-decoration-line-through $79.00
+                                        span.text-primary $49.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Image
+                                .card-img
+                                    // Image
+                                    a.card-img-hover(href="product.html")
+                                        img.card-img-top.card-img-back(src="assets/img/products/product-124.jpg" alt="...")
+                                        img.card-img-top.card-img-front(src="assets/img/products/product-11.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Skirts
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Printed A-line Skirt
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $79.00
+                        .col-6.col-md-4
+                            // Card
+                            .card.mb-7
+                                // Badge
+                                .badge.badge-white.card-badge.card-badge.text-uppercase
+                                    | New
+                                // Image
+                                .card-img
+                                    // Image
+                                    a(href="#!")
+                                        img.card-img-top.card-img-front(src="https://yevgenysim.github.io/shopper/assets/img/products/product-7.jpg" alt="...")
+                                    // Actions
+                                    .card-actions
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="modal" data-target="#modalProduct")
+                                                i.fe.fe-eye
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-shopping-cart
+                                        span.card-action
+                                            button.btn.btn-xs.btn-circle.btn-white-primary(data-toggle="button")
+                                                i.fe.fe-heart
+                                // Body
+                                .card-body.px-0
+                                    // Category
+                                    .font-size-xs
+                                        a.text-muted(href="shop.html") Shoes
+                                    // Title
+                                    .font-weight-bold
+                                        a.text-body(href="product.html")
+                                            | Heel strappy Sandals
+                                    // Price
+                                    .font-weight-bold.text-muted
+                                        | $90.00
+                    // Pagination
+                    nav.d-flex.justify-content-center.justify-content-md-end
+                        ul.pagination.pagination-sm.text-gray-400
+                            li.page-item
+                                a.page-link.page-link-arrow(href="#")
+                                    i.fa.fa-caret-left
+                            li.page-item.active
+                                a.page-link(href="#") 1
+                            li.page-item
+                                a.page-link(href="#") 2
+                            li.page-item
+                                a.page-link(href="#") 3
+                            li.page-item
+                                a.page-link(href="#") 4
+                            li.page-item
+                                a.page-link(href="#") 5
+                            li.page-item
+                                a.page-link(href="#") 6
+                            li.page-item
+                                a.page-link.page-link-arrow(href="#")
+                                    i.fa.fa-caret-right

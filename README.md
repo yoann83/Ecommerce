@@ -1,1 +1,11 @@
-Projet Ecommerce réalisée avec la formation 3W Academy session Pro10
+# Projet NodeJs
+Utilisation du framework **express** 
+
+## Installer le projet
+> npm install
+
+## Configurer le projet
+> Modifiez les différents parametres dans le fichier app/config.js
+
+## Démarrer le projet
+> npm start

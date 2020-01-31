@@ -1,0 +1,37 @@
+extends ../layout
+block content
+    div(id='form-container')
+        form(method='post')
+            .form-group-center
+                h3 INSCRIPTION
+                if error
+                    .alert.alert-warning(role="alert")  #{error}
+            .form-group
+                label(for="civility") Civilité
+                select#civility(required="true" class="form-control" name="civility")
+                    option(value="M.") Monsieur
+                    option(value="Mme") Madame
+            .form-group
+                .row
+                    .col
+                        label Prénom
+                        input#firstname(class="form-control" type="text" placeholder="Prénom" required="true" name="firstname")
+                    .col
+                        label Nom
+                        input#lastname(class="form-control" type="text" placeholder="Nom" required="true" name="lastname")
+            .form-group
+                label(for="email") Adress Email
+                input#email(class="form-control" type="email" aria-describedby="emailHelp" placeholder="dupond@mail.fr" required="true" name="email")
+                small#emailHelp Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.
+            .form-group
+                label(for="pass") Mot de passe
+                input#pass(class="form-control" type="password" placeholder="Mot de passe..." required="true" name="password")
+            .form-group
+                label(for="cpass") Confirmation du mot de passe
+                input#cpass(class="form-control" type="password" aria-describedby="passwordHelp" placeholder="conformet le mot de passe..." required="true" name="cpassword")
+                small#passwordHelp Nous n'enregistrons jamais votre mot de pass en clair.
+            .form-group-center
+                button.btn.btn-primary(type="submit") S'inscrire
+            .form-group-center
+                small
+                    a(href='/connection') Je me connecte

@@ -1,0 +1,22 @@
+extends ../layout
+block content
+    div(id='form-container')
+        form(method='post')
+            .form-group-center
+                h3 Connection
+                if error
+                    .alert.alert-danger(role="alert")  #{error}
+            .form-group
+                label(for="login") Adress Email
+                input#login(class="form-control" type="email" aria-describedby="emailHelp" placeholder="dupond@mail.fr" required="true" name="email")
+                small#emailHelp Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.
+            .form-group
+                label(for="pass") Mot de passe
+                input#pass(class="form-control" type="password" placeholder="Mot de passe..." required="true" name="password")
+                small#passwordHelp Nous n'enregistrons jamais votre mot de pass en clair.
+            .form-group-center
+                button.btn.btn-primary(type="submit") Se connecter
+
+            .form-group
+            small
+                a(href="/inscription")  Je m'inscris
